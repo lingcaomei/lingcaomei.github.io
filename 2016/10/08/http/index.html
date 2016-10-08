@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="笔记," />
 
 
 
@@ -84,12 +84,22 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="My Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="http状态码有那些？分别代表是什么意思？
+简单版
+123456789101112131415161718[    100  Continue   继续，一般在发送post请求时，已发送了http header之后服务端将返回此信息，表示确认，之后发送具体参数信息    200  OK         正常返回信息    201  Created    请求成功并且服务器创建了新的资源    20">
+<meta property="og:type" content="article">
+<meta property="og:title" content="http状态码及其意思">
+<meta property="og:url" content="http://yoursite.com/2016/10/08/http/index.html">
 <meta property="og:site_name" content="My Blog">
+<meta property="og:description" content="http状态码有那些？分别代表是什么意思？
+简单版
+123456789101112131415161718[    100  Continue   继续，一般在发送post请求时，已发送了http header之后服务端将返回此信息，表示确认，之后发送具体参数信息    200  OK         正常返回信息    201  Created    请求成功并且服务器创建了新的资源    20">
+<meta property="og:updated_time" content="2016-10-08T06:11:53.844Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="My Blog">
+<meta name="twitter:title" content="http状态码及其意思">
+<meta name="twitter:description" content="http状态码有那些？分别代表是什么意思？
+简单版
+123456789101112131415161718[    100  Continue   继续，一般在发送post请求时，已发送了http header之后服务端将返回此信息，表示确认，之后发送具体参数信息    200  OK         正常返回信息    201  Created    请求成功并且服务器创建了新的资源    20">
 
 
 
@@ -110,9 +120,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/10/08/http/"/>
 
-  <title> My Blog </title>
+  <title> http状态码及其意思 | My Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -133,9 +143,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -232,9 +240,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -254,10 +262,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/10/08/http/" itemprop="url">
-                  http状态码及其意思
-                </a>
+                http状态码及其意思
               
             
           </h1>
@@ -297,250 +302,64 @@
       
 
       
-        
-          
-            <p>http状态码有那些？分别代表是什么意思？</p>
+        <p>http状态码有那些？分别代表是什么意思？</p>
 <pre><code>简单版
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">[</div><div class="line">    100  Continue   继续，一般在发送post请求时，已发送了http header之后服务端将返回此信息，表示确认，之后发送具体参数信息</div><div class="line">    200  OK         正常返回信息</div><div class="line">    201  Created    请求成功并且服务器创建了新的资源</div><div class="line">    202  Accepted   服务器已接受请求，但尚未处理</div><div class="line">    301  Moved Permanently  请求的网页已永久移动到新位置。</div><div class="line">    302 Found       临时性重定向。</div><div class="line">    303 See Other   临时性重定向，且总是使用 GET 请求新的 URI。</div><div class="line">    304  Not Modified 自从上次请求后，请求的网页未修改过。</div><div class="line"></div><div class="line">    400 Bad Request  服务器无法理解请求的格式，客户端不应当尝试再次使用相同的内容发起请求。</div><div class="line">    401 Unauthorized 请求未授权。</div><div class="line">    403 Forbidden   禁止访问。</div><div class="line">    404 Not Found   找不到如何与 URI 相匹配的资源。</div><div class="line"></div><div class="line">    500 Internal Server Error  最常见的服务器端错误。</div><div class="line">    503 Service Unavailable 服务器端暂时无法处理请求（可能是过载或维护）。</div><div class="line">]</div></pre></td></tr></table></figure>
 </code></pre><p>  完整版<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div></pre></td><td class="code"><pre><div class="line">1**(信息类)：表示接收到请求并且继续处理</div><div class="line">  100——客户必须继续发出请求</div><div class="line">  101——客户要求服务器根据请求转换HTTP协议版本</div><div class="line"></div><div class="line">2**(响应成功)：表示动作被成功接收、理解和接受</div><div class="line">  200——表明该请求被成功地完成，所请求的资源发送回客户端</div><div class="line">  201——提示知道新文件的URL</div><div class="line">  202——接受和处理、但处理未完成</div><div class="line">  203——返回信息不确定或不完整</div><div class="line">  204——请求收到，但返回信息为空</div><div class="line">  205——服务器完成了请求，用户代理必须复位当前已经浏览过的文件</div><div class="line">  206——服务器已经完成了部分用户的GET请求</div><div class="line"></div><div class="line">3**(重定向类)：为了完成指定的动作，必须接受进一步处理</div><div class="line">  300——请求的资源可在多处得到</div><div class="line">  301——本网页被永久性转移到另一个URL</div><div class="line">  302——请求的网页被转移到一个新的地址，但客户访问仍继续通过原始URL地址，重定向，新的URL会在response中的Location中返回，浏览器将会使用新的URL发出新的Request。</div><div class="line">  303——建议客户访问其他URL或访问方式</div><div class="line">  304——自从上次请求后，请求的网页未修改过，服务器返回此响应时，不会返回网页内容，代表上次的文档已经被缓存了，还可以继续使用</div><div class="line">  305——请求的资源必须从服务器指定的地址得到</div><div class="line">  306——前一版本HTTP中使用的代码，现行版本中不再使用</div><div class="line">  307——申明请求的资源临时性删除</div><div class="line"></div><div class="line">4**(客户端错误类)：请求包含错误语法或不能正确执行</div><div class="line">  400——客户端请求有语法错误，不能被服务器所理解</div><div class="line">  401——请求未经授权，这个状态代码必须和WWW-Authenticate报头域一起使用</div><div class="line">  HTTP 401.1 - 未授权：登录失败</div><div class="line">  　　HTTP 401.2 - 未授权：服务器配置问题导致登录失败</div><div class="line">  　　HTTP 401.3 - ACL 禁止访问资源</div><div class="line">  　　HTTP 401.4 - 未授权：授权被筛选器拒绝</div><div class="line">  HTTP 401.5 - 未授权：ISAPI 或 CGI 授权失败</div><div class="line">  402——保留有效ChargeTo头响应</div><div class="line">  403——禁止访问，服务器收到请求，但是拒绝提供服务</div><div class="line">  HTTP 403.1 禁止访问：禁止可执行访问</div><div class="line">  　　HTTP 403.2 - 禁止访问：禁止读访问</div><div class="line">  　　HTTP 403.3 - 禁止访问：禁止写访问</div><div class="line">  　　HTTP 403.4 - 禁止访问：要求 SSL</div><div class="line">  　　HTTP 403.5 - 禁止访问：要求 SSL 128</div><div class="line">  　　HTTP 403.6 - 禁止访问：IP 地址被拒绝</div><div class="line">  　　HTTP 403.7 - 禁止访问：要求客户证书</div><div class="line">  　　HTTP 403.8 - 禁止访问：禁止站点访问</div><div class="line">  　　HTTP 403.9 - 禁止访问：连接的用户过多</div><div class="line">  　　HTTP 403.10 - 禁止访问：配置无效</div><div class="line">  　　HTTP 403.11 - 禁止访问：密码更改</div><div class="line">  　　HTTP 403.12 - 禁止访问：映射器拒绝访问</div><div class="line">  　　HTTP 403.13 - 禁止访问：客户证书已被吊销</div><div class="line">  　　HTTP 403.15 - 禁止访问：客户访问许可过多</div><div class="line">  　　HTTP 403.16 - 禁止访问：客户证书不可信或者无效</div><div class="line">  HTTP 403.17 - 禁止访问：客户证书已经到期或者尚未生效</div><div class="line">  404——一个404错误表明可连接服务器，但服务器无法取得所请求的网页，请求资源不存在。eg：输入了错误的URL</div><div class="line">  405——用户在Request-Line字段定义的方法不允许</div><div class="line">  406——根据用户发送的Accept拖，请求资源不可访问</div><div class="line">  407——类似401，用户必须首先在代理服务器上得到授权</div><div class="line">  408——客户端没有在用户指定的饿时间内完成请求</div><div class="line">  409——对当前资源状态，请求不能完成</div><div class="line">  410——服务器上不再有此资源且无进一步的参考地址</div><div class="line">  411——服务器拒绝用户定义的Content-Length属性请求</div><div class="line">  412——一个或多个请求头字段在当前请求中错误</div><div class="line">  413——请求的资源大于服务器允许的大小</div><div class="line">  414——请求的资源URL长于服务器允许的长度</div><div class="line">  415——请求资源不支持请求项目格式</div><div class="line">  416——请求中包含Range请求头字段，在当前请求资源范围内没有range指示值，请求也不包含If-Range请求头字段</div><div class="line">  417——服务器不满足请求Expect头字段指定的期望值，如果是代理服务器，可能是下一级服务器不能满足请求长。</div><div class="line"></div><div class="line">5**(服务端错误类)：服务器不能正确执行一个正确的请求</div><div class="line">  HTTP 500 - 服务器遇到错误，无法完成请求</div><div class="line">  　　HTTP 500.100 - 内部服务器错误 - ASP 错误</div><div class="line">  　　HTTP 500-11 服务器关闭</div><div class="line">  　　HTTP 500-12 应用程序重新启动</div><div class="line">  　　HTTP 500-13 - 服务器太忙</div><div class="line">  　　HTTP 500-14 - 应用程序无效</div><div class="line">  　　HTTP 500-15 - 不允许请求 global.asa</div><div class="line">  　　Error 501 - 未实现</div><div class="line">HTTP 502 - 网关错误</div><div class="line">HTTP 503：由于超载或停机维护，服务器目前无法使用，一段时间后可能恢复正常</div></pre></td></tr></table></figure></p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/09/29/Vue-js-双向绑定原理/" itemprop="url">
-                  Vue.js:双向绑定原理
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-29T17:39:56+08:00" content="2016-09-29">
-              2016-09-29
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-
-          
-            
-          
-
-          
-
-          
-          
-
+            <a href="/tags/笔记/" rel="tag">#笔记</a>
           
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <p>近日读了Vue.js一部分源代码，倒也是感到道阻且长。其中最核心的一点就是数据绑定。</p>
-<p>相比于Angular.js的脏值检查与React.js的虚拟DOM，Vue.js运用了Object.defineProperty来追踪数值的变化和依赖，相当于对数据的读取进行了“劫持”。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/09/29/Vue-js-双向绑定原理/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/09/29/Vue-js-双向绑定原理/" rel="next" title="Vue.js:双向绑定原理">
+                <i class="fa fa-chevron-left"></i> Vue.js:双向绑定原理
+              </a>
+            
           </div>
-        
-      
-    </div>
 
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+          <div class="post-nav-prev post-nav-item">
             
-            
-              
-                
-                <a class="post-title-link" href="/2016/09/29/hello-world/" itemprop="url">
-                  由此开始~~
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-29T14:57:34+08:00" content="2016-09-29">
-              2016-09-29
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <blockquote>
-<p>这是我用hexo创建的第一篇博客</p>
-<p>以后就可以随手记记写写什么的啦~~</p>
-</blockquote>
-<h4 id="hexo-github-创建博客"><a href="#hexo-github-创建博客" class="headerlink" title="hexo+github 创建博客"></a>hexo+github 创建博客</h4><p>一、安装node hexo  github上注册一个账号</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install node</div><div class="line">npm install -g hexo</div></pre></td></tr></table></figure>
-<p>二、在本地创建一个文件夹 blog ，作为工程目录</p>
-<p>三、初始化hexo</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init  【文件夹】  带有文件夹  就是创建见一个文件夹 作为工程目录，否则在改 路径下生成</div></pre></td></tr></table></figure>
-<p>四、部署到github上</p>
-<p>新建仓库名  username.github.io<br>在<strong>_config.yml</strong> 文件中 配置 ：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: https://github.com/lingcaomei/lingcaomei.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
-<p>五、发布到github上 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo deploy</div></pre></td></tr></table></figure>
-<p>常用命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">hexo new &quot;postName&quot; #新建文章</div><div class="line">hexo new page &quot;pageName&quot; #新建页面</div><div class="line">hexo generate #生成静态页面至public目录</div><div class="line">hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）</div><div class="line">hexo deploy #将.deploy目录部署到GitHub</div><div class="line">hexo help  # 查看帮助</div><div class="line">hexo version  #查看Hexo的版本</div></pre></td></tr></table></figure>
-<p>复合命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo deploy -g  #生成加部署</div><div class="line">hexo server -g  #生成加预览</div></pre></td></tr></table></figure></p>
-<p>命令的简写为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">hexo n == hexo new</div><div class="line">hexo g == hexo generate</div><div class="line">hexo s == hexo server</div><div class="line">hexo d == hexo deploy</div></pre></td></tr></table></figure></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -548,6 +367,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -567,8 +390,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -611,6 +443,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -707,6 +550,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
